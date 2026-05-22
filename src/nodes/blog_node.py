@@ -2,10 +2,10 @@ from src.states.blogstate import BlogState
 
 class BlogNode:
     """
-    A class to represent he blog node
+    A class to represent the blog node
     """
 
-    def __init__(self,llm):
+    def __init__(self,llm): # Initialize the BlogNode with a language model (llm)
         self.llm=llm
 
     
@@ -21,9 +21,9 @@ class BlogNode:
 
                    """
             
-            sytem_message=prompt.format(topic=state["topic"])
-            print(sytem_message)
-            response=self.llm.invoke(sytem_message)
+            system_message=prompt.format(topic=state["topic"])
+            print(system_message)
+            response=self.llm.invoke(system_message)
             print(response)
             return {"blog":{"title":response.content}}
         
