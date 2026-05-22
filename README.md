@@ -313,4 +313,4 @@ python app.py
 
 ## License
 
-No license has been added yet. Add a license before publishing or distributing this project.
+This project is licensed under the MIT License. See the `LICENSE` file for the SPDX license reference.
